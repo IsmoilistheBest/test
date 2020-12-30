@@ -1,0 +1,88 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// Custom
+.bg-custom {
+    background-color: rgba(0,0,0,0.2);
+}
+body{
+    background-color: rgb(74, 175, 244);
+    background: radial-gradient(circle, rgba(74, 175, 244, 1) 32%, rgba(74,78,244,1) 100%);
+}
+.btn-add{
+    font-size: 18px;
+}
+
+.todo-body {
+    width: 100vw;
+    height: 100vh;
+
+}
+.todo svg:hover{
+    cursor: pointer;
+}
+.text-del{
+    text-decoration: line-through;
+}
+.overtext{
+    text-overflow: ellipsis;
+    max-width: 100%;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: break-wrap;
+    overflow: hidden;
+}
+.overtext__title{
+    text-overflow: ellipsis;
+    max-width: 100%;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: break-wrap;
+    overflow: hidden;
+}
+.overtext:hover{
+    display: inline-block;
+    overflow: auto;
+}
+.svg-circleplus { height: 30px; stroke: green; }
+.svg-custom{
+    margin-right: 10px;
+
+}
+
+.textarea-custom{
+    width: 100%;
+    height: auto;
+}
+.modal-description {
+    font-size: 15px;
+    font-family: 'Nunito';
+    color: $indigo;
+    font-style: italic;
+    &__text{
+        font-style: normal;
+        color: black;
+        font-size: 20px;
+        font-family: 'Nunito';
+    }
+    &__body__text {
+        overflow: auto;
+    }
+}
+.modal-title{
+    font-size: 20px;
+    color: $red;
+    font-family: 'Nunito';
+    &__text{
+        font-size: 22px;
+        color: $purple;
+        overflow: auto;
+    }
+
+}
